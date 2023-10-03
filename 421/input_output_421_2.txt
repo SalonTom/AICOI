@@ -1,0 +1,10 @@
+421, 2, keep-keep-keep, 800
+643, 2, roll-keep-roll544, 1, roll-roll-keep, 106
+631, 2, roll-roll-roll322, 1, roll-keep-roll, 106
+631, 2, roll-roll-roll642, 1, roll-keep-roll, 104
+533, 2, keep-roll-roll653, 1, roll-keep-roll, 106
+443, 2, roll-keep-roll543, 1, roll-keep-roll, 104
+441, 2, roll-keep-keep431, 1, roll-roll-keep, 106
+642, 2, roll-keep-roll644, 1, roll-keep-roll, 104
+522, 2, roll-roll-keep211, 1, keep-keep-roll, 203
+651, 2, roll-roll-roll322, 1, roll-keep-roll, 106
