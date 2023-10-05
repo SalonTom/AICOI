@@ -2,7 +2,7 @@
 import json
 from statistics import mean
 import sys
-sys.path.insert( 1, __file__.split('tutos')[0] )
+sys.path.insert( 1, __file__.split('421')[0] )
 
 import hackagames.hackapy as hg
 import random

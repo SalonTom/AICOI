@@ -2,7 +2,7 @@
 import json
 from statistics import mean
 import sys
-sys.path.insert( 1, __file__.split('tutos')[0] )
+sys.path.insert( 1, __file__.split('421')[0] )
 
 import hackagames.hackapy as hg
 import random
@@ -51,6 +51,7 @@ class AutonomousPlayer( hg.AbsPlayer ) :
         # best_turn_action, turn_score = self.best_action(self.dices)
 
         self.current_game.append(''.join([str(dice) for dice in self.dices]))
+        self.current_game.append( str( self.horizon ) )
         self.current_game.append( str(action) )
 
         return action  
@@ -83,56 +84,42 @@ if __name__ == '__main__' :
             # print(line)
 
             if int(line[1]) <= 1 :
+                # Init the state in the dict ex : { '421' : {} }
                 if player.policy.get(line[0]) is None :
                     player.policy[line[0]] =  {}
                 
-                if player.policy[line[0]].get(line[2]) is None:
-                    player.policy[line[0]][line[2]] = []
-
-                player.policy[line[0]][line[2]].append(float(line[3][:len(line[3]) - 1]))
-
-                # combination_scores = player.policy[line[0]][line[2]]
+                state = line[0]
                 
-                # combination_higher_score = 0
+                # Init the action for the state in the dict ex : { '421' : { 'keep-keep-keep' } }
+                if player.policy[state].get(line[2]) is None:
+                    player.policy[state][line[2]] = []
+                
+                action = line[2]
 
-                # for score in combination_scores:
-                #     if score > combination_higher_score:
-                #         final_policy[line[0]] = line[2]
+                action_score = line[3][:len(line[3]) - 1]
+                player.policy[state][action].append(float(action_score))
 
-                # average_combination_score = mean(combination_scores)
+        for state in player.policy.keys():
+            if final_policy.get(state) is None :
+                final_policy[state] = ''
 
-                # combination_higher_score = 0
-                # if average_combination_score > combination_higher_score:
-                #     player.policy[line[0]][line[2]] = [average_combination_score]
+            best_action = 'roll-roll-keep'
+            best_state_average_score = 0
 
-                # max_score = 0
-                # for combination in player.policy[line[0]].keys() :
-                #     if player.policy[line[0]][line[2]][0] > max_score:
-                #         final_policy[line[0]] = line[2]
+            for action in player.policy[state].keys():
+                state_action_score = player.policy[state][action]
 
-                # player.policy[line[0]][line[2]] = [average_combination_score]
-        
+                average_action_score = mean(state_action_score)
 
-        for dice_combination in player.policy.keys():
-            if final_policy.get(dice_combination) is None :
-                final_policy[dice_combination] = ''
+                if (average_action_score > best_state_average_score):
+                    best_action = action
+                    best_state_average_score = average_action_score
             
-            actions_and_scores = player.policy[dice_combination]
-
-            current_action = 'keep-keep-keep'
-            max_score = 0
-
-            for action in actions_and_scores.keys():
-                # print(f'dices : {dice_combination} - occurences {actions_and_scores["keep-keep-keep"]}')
-                scores = actions_and_scores[action]
-                max_scores = max(scores)
-
-                if max_scores > max_score:
-                    max_score = max_scores
-                    current_action = action
-            
-            final_policy[dice_combination] = current_action
+            final_policy[state] = best_action
 
         # player.policy = {}
-        print('------',json.dumps(final_policy))
+        # print('------',json.dumps(final_policy))
+        data_file = open('player_policy.json', 'w+')
+        json.dump(final_policy, data_file, sort_keys=True, indent=4)
+        data_file.close()
         # print(player.policy)
