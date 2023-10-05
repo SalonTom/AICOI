@@ -1,22 +1,19 @@
 # Local HackaGame:
 import json
 import sys
-sys.path.insert( 1, __file__.split('tutos')[0] )
+sys.path.insert( 1, __file__.split('421')[0] )
 
 import hackagames.hackapy as hg
 import random
 import itertools
-
-f = open('data.json')
-possible_combinations = json.load(f)
 
 class AutonomousPlayer( hg.AbsPlayer ) :
 
     # Player interface :
     def wakeUp(self, playerId, numberOfPlayers, gameConf):
         test = 8
-        # print( f'---\nWake-up player-{playerId} ({numberOfPlayers} players)')
-        # print( gameConf )
+        print( f'---\nWake-up player-{playerId} ({numberOfPlayers} players)')
+        print( gameConf )
     
     def perceive(self, gameState):
         self.horizon= gameState.child(1).flag(1)
@@ -99,12 +96,11 @@ class AutonomousPlayer( hg.AbsPlayer ) :
         print( f'Action: {action}' )
         # best_turn_action, turn_score = self.best_action(self.dices)
 
-
         return action  
     
     def sleep(self, result):
         test=8
-        # print( f'--- Results: {str(result)}' )
+        print( f'--- Results: {str(result)}' )
 
 # script :
 if __name__ == '__main__' :
