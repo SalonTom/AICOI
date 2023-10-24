@@ -37,7 +37,7 @@ The scores are calculated based on the following method, where state is the comb
 
 * A straight is worth 200 points + value of the higher dice (654 is worth 206 points)
 
-* Any other combination is worth 0 points
+* Any other combination is worth 100 points + the value of the higher dice
 
 The optimum average score out of a lot of games is expected to be around 340 points.
 

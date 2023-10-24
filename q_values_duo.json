@@ -1,0 +1,112 @@
+{
+    "1": {
+        "433": {
+            "keep-keep-keep": -0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "552": {
+            "keep-keep-keep": -0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "632": {
+            "keep-keep-keep": 0.0,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "651": {
+            "keep-keep-keep": 0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "665": {
+            "keep-keep-keep": 0.0,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "sleep": {
+            "sleep": 0
+        }
+    },
+    "2": {
+        "331": {
+            "keep-keep-keep": -0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "431": {
+            "keep-keep-keep": -0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "631": {
+            "keep-keep-keep": 0.0,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "651": {
+            "keep-keep-keep": 0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "654": {
+            "keep-keep-keep": 0.1,
+            "keep-keep-roll": 0.0,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": 0.0,
+            "roll-keep-keep": 0.0,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": 0.0,
+            "roll-roll-roll": 0.0
+        },
+        "sleep": {
+            "sleep": 0
+        }
+    }
+}

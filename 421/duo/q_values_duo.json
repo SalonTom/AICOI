@@ -1,0 +1,1132 @@
+{
+    "1": {
+        "111": {
+            "keep-keep-keep": 0.9305465850638223,
+            "keep-keep-roll": 0.2239812439798147,
+            "keep-roll-keep": 0.31013710509618153,
+            "keep-roll-roll": 0.1860162874696189,
+            "roll-keep-keep": -0.109,
+            "roll-keep-roll": -0.031290043765182435,
+            "roll-roll-keep": 0.18319187136073461,
+            "roll-roll-roll": -0.033586277486464096
+        },
+        "211": {
+            "keep-keep-keep": -0.01132724842593115,
+            "keep-keep-roll": -0.10486995305447555,
+            "keep-roll-keep": -0.0355802949035995,
+            "keep-roll-roll": -0.24917019905864612,
+            "roll-keep-keep": 0.7314985174539619,
+            "roll-keep-roll": -0.03250303003595201,
+            "roll-roll-keep": -0.012412900847815031,
+            "roll-roll-roll": -0.06492817000089224
+        },
+        "221": {
+            "keep-keep-keep": -0.814697981114816,
+            "keep-keep-roll": -0.3815420399810959,
+            "keep-roll-keep": -0.3512522612309966,
+            "keep-roll-roll": -0.3650193960734348,
+            "roll-keep-keep": -0.3926419014863992,
+            "roll-keep-roll": -0.36171572373698113,
+            "roll-roll-keep": -0.3923528771578386,
+            "roll-roll-roll": 0.017784814404572975
+        },
+        "222": {
+            "keep-keep-keep": 0.6372807449883998,
+            "keep-keep-roll": 0.0010102404547231477,
+            "keep-roll-keep": -0.22361779452804753,
+            "keep-roll-roll": -0.3420294589,
+            "roll-keep-keep": -0.06959612682967115,
+            "roll-keep-roll": -0.018401023721112436,
+            "roll-roll-keep": -0.011615346461232887,
+            "roll-roll-roll": -0.018100000000000005
+        },
+        "311": {
+            "keep-keep-keep": 0.17046789048547858,
+            "keep-keep-roll": 0.14768112513352633,
+            "keep-roll-keep": 0.024246659872086542,
+            "keep-roll-roll": 0.13082593097543385,
+            "roll-keep-keep": 0.4964841810822233,
+            "roll-keep-roll": -0.20902204257463006,
+            "roll-roll-keep": -0.32015462990316734,
+            "roll-roll-roll": -0.1046152184412961
+        },
+        "321": {
+            "keep-keep-keep": 0.9552422817093962,
+            "keep-keep-roll": -0.2931185090330155,
+            "keep-roll-keep": -0.2690431864569385,
+            "keep-roll-roll": -0.3158725208317359,
+            "roll-keep-keep": -0.33766950113439376,
+            "roll-keep-roll": -0.47241020057288596,
+            "roll-roll-keep": -0.31314239630200424,
+            "roll-roll-roll": -0.3024966829777905
+        },
+        "322": {
+            "keep-keep-keep": -0.6125795110000001,
+            "keep-keep-roll": -0.3412547049544994,
+            "keep-roll-keep": -0.3226906659623765,
+            "keep-roll-roll": -0.3384589700373075,
+            "roll-keep-keep": -0.32942247254365153,
+            "roll-keep-roll": -0.31116937885326484,
+            "roll-roll-keep": -0.32924210987995467,
+            "roll-roll-roll": 0.27228044267494367
+        },
+        "331": {
+            "keep-keep-keep": -0.6125795110000001,
+            "keep-keep-roll": -0.3078693526433297,
+            "keep-roll-keep": -0.341006988625433,
+            "keep-roll-roll": -0.33703335226898945,
+            "roll-keep-keep": -0.3540909717161693,
+            "roll-keep-roll": -0.34782265335119844,
+            "roll-roll-keep": -0.31491446220698804,
+            "roll-roll-roll": 0.2572665387506941
+        },
+        "332": {
+            "keep-keep-keep": -0.6748608413911511,
+            "keep-keep-roll": -0.34708988021693266,
+            "keep-roll-keep": -0.3659178121129031,
+            "keep-roll-roll": -0.3435488035293951,
+            "roll-keep-keep": -0.3418863892200359,
+            "roll-keep-roll": -0.3564241342518585,
+            "roll-roll-keep": 0.022072348205123347,
+            "roll-roll-roll": -0.3362245953542577
+        },
+        "333": {
+            "keep-keep-keep": 0.8876022762883157,
+            "keep-keep-roll": -0.09924394958797597,
+            "keep-roll-keep": -0.125929,
+            "keep-roll-roll": -0.09203228783554498,
+            "roll-keep-keep": -0.0901810027156938,
+            "roll-keep-roll": -0.03330058275600743,
+            "roll-roll-keep": -0.12050436122356144,
+            "roll-roll-roll": 0.029823282908217418
+        },
+        "411": {
+            "keep-keep-keep": 0.6066228139585587,
+            "keep-keep-roll": -0.21950654704633127,
+            "keep-roll-keep": 0.13462362052969673,
+            "keep-roll-roll": -0.16232385416458098,
+            "roll-keep-keep": 0.15458940168144006,
+            "roll-keep-roll": -0.2024121452364449,
+            "roll-roll-keep": -0.20492704613016438,
+            "roll-roll-roll": 0.06186287692884282
+        },
+        "421": {
+            "keep-keep-keep": 0.9947744680164519,
+            "keep-keep-roll": -0.11381048916931846,
+            "keep-roll-keep": -0.31539714672299424,
+            "keep-roll-roll": -0.013916212349376483,
+            "roll-keep-keep": -0.126341004385835,
+            "roll-keep-roll": -0.5206223344478311,
+            "roll-roll-keep": 0.0922191644315325,
+            "roll-roll-roll": -0.10487486418923533
+        },
+        "422": {
+            "keep-keep-keep": -0.7615538811148159,
+            "keep-keep-roll": -0.35184687666330483,
+            "keep-roll-keep": -0.3891758838311441,
+            "keep-roll-roll": -0.3766718000767718,
+            "roll-keep-keep": -0.4229867971755984,
+            "roll-keep-roll": -0.41228423254611735,
+            "roll-roll-keep": -0.5316794258960952,
+            "roll-roll-roll": 0.31493985418860126
+        },
+        "431": {
+            "keep-keep-keep": -0.7231787286731607,
+            "keep-keep-roll": -0.3967344786533603,
+            "keep-roll-keep": -0.42713472051628654,
+            "keep-roll-roll": -0.39584837284365704,
+            "roll-keep-keep": -0.42332383578803545,
+            "roll-keep-roll": -0.37790933952515815,
+            "roll-roll-keep": -0.011988836689635338,
+            "roll-roll-roll": -0.4333168345460451
+        },
+        "432": {
+            "keep-keep-keep": 0.2822116580230142,
+            "keep-keep-roll": -0.14445478190693706,
+            "keep-roll-keep": -0.39022975420396677,
+            "keep-roll-roll": -0.36323792277341516,
+            "roll-keep-keep": -0.25357264673540914,
+            "roll-keep-roll": -0.1778852369763368,
+            "roll-roll-keep": -0.4420936632389444,
+            "roll-roll-roll": -0.283131677119173
+        },
+        "433": {
+            "keep-keep-keep": -0.559435411,
+            "keep-keep-roll": -0.36023605724371066,
+            "keep-roll-keep": -0.33074502529333755,
+            "keep-roll-roll": -0.3102513245820126,
+            "roll-keep-keep": -0.31508268674735435,
+            "roll-keep-roll": -0.3360729219183594,
+            "roll-roll-keep": -0.36438018146921913,
+            "roll-roll-roll": 0.2911310012625666
+        },
+        "441": {
+            "keep-keep-keep": -0.5695327900000001,
+            "keep-keep-roll": -0.33007043744123593,
+            "keep-roll-keep": -0.3219436352780665,
+            "keep-roll-roll": -0.3145044123856713,
+            "roll-keep-keep": 0.12416571268177778,
+            "roll-keep-roll": -0.33767396785001363,
+            "roll-roll-keep": -0.3265323788204644,
+            "roll-roll-roll": -0.3103924994465947
+        },
+        "442": {
+            "keep-keep-keep": -0.6492881182963511,
+            "keep-keep-roll": -0.3420672101689357,
+            "keep-roll-keep": -0.3045394114466469,
+            "keep-roll-roll": -0.3265169130174156,
+            "roll-keep-keep": -0.36582563062124307,
+            "roll-keep-roll": -0.30183194101768107,
+            "roll-roll-keep": -0.38796032401470987,
+            "roll-roll-roll": -0.03945056839451503
+        },
+        "443": {
+            "keep-keep-keep": -0.43057940391000005,
+            "keep-keep-roll": -0.28370503056797935,
+            "keep-roll-keep": 0.1216896183262948,
+            "keep-roll-roll": -0.2652043610274917,
+            "roll-keep-keep": -0.2600627950124847,
+            "roll-keep-roll": -0.25038578883921137,
+            "roll-roll-keep": -0.24964602344797193,
+            "roll-roll-roll": -0.23916429710739448
+        },
+        "444": {
+            "keep-keep-keep": 0.5622498191723688,
+            "keep-keep-roll": -0.25451395398844245,
+            "keep-roll-keep": -0.10831716416197623,
+            "keep-roll-roll": -0.11513115248267626,
+            "roll-keep-keep": -0.0857843576058935,
+            "roll-keep-roll": 0.17215587657477133,
+            "roll-roll-keep": -0.0337896011986798,
+            "roll-roll-roll": -0.24659953425514683
+        },
+        "511": {
+            "keep-keep-keep": 0.7616327570134157,
+            "keep-keep-roll": 0.08820966538365368,
+            "keep-roll-keep": 0.041355983516713,
+            "keep-roll-roll": -0.21120730211729397,
+            "roll-keep-keep": -0.0024461909315271375,
+            "roll-keep-roll": -0.021635633386167627,
+            "roll-roll-keep": 0.0822500997511325,
+            "roll-roll-roll": -0.03052746929730183
+        },
+        "521": {
+            "keep-keep-keep": -0.4004558053990742,
+            "keep-keep-roll": -0.37280087890006497,
+            "keep-roll-keep": -0.3812238422031655,
+            "keep-roll-roll": -0.37719597293556806,
+            "roll-keep-keep": -0.38356166025655447,
+            "roll-keep-roll": -0.38359889419514204,
+            "roll-roll-keep": 0.503940354457514,
+            "roll-roll-roll": -0.4030819661718248
+        },
+        "522": {
+            "keep-keep-keep": -0.38700323558440464,
+            "keep-keep-roll": -0.39740554038641274,
+            "keep-roll-keep": -0.3522779972285355,
+            "keep-roll-roll": -0.3811811192170711,
+            "roll-keep-keep": -0.38470882609120605,
+            "roll-keep-roll": -0.36378218379542937,
+            "roll-roll-keep": -0.3471795209323038,
+            "roll-roll-roll": 0.028101931461175456
+        },
+        "531": {
+            "keep-keep-keep": -0.4634427971096837,
+            "keep-keep-roll": -0.4204574363330418,
+            "keep-roll-keep": -0.4332875011537993,
+            "keep-roll-roll": -0.42401701767965183,
+            "roll-keep-keep": -0.40975552859332665,
+            "roll-keep-roll": -0.4118807915659001,
+            "roll-roll-keep": 0.0014138711393632958,
+            "roll-roll-roll": -0.3907762192215366
+        },
+        "532": {
+            "keep-keep-keep": -0.426675887565386,
+            "keep-keep-roll": -0.441709156564265,
+            "keep-roll-keep": -0.40136078875304537,
+            "keep-roll-roll": -0.4404107395787099,
+            "roll-keep-keep": -0.42648857834651166,
+            "roll-keep-roll": -0.4344926234936629,
+            "roll-roll-keep": -0.4011651095963421,
+            "roll-roll-roll": 0.352852041325305
+        },
+        "533": {
+            "keep-keep-keep": -0.6443092490491,
+            "keep-keep-roll": -0.30478965484961396,
+            "keep-roll-keep": -0.31399865732401233,
+            "keep-roll-roll": 0.08450138743030433,
+            "roll-keep-keep": -0.30338879803052643,
+            "roll-keep-roll": -0.3168544135036455,
+            "roll-roll-keep": -0.3619641517924501,
+            "roll-roll-roll": -0.39994744141136007
+        },
+        "541": {
+            "keep-keep-keep": -0.5147003945332638,
+            "keep-keep-roll": -0.33591509716386453,
+            "keep-roll-keep": -0.3281146238215954,
+            "keep-roll-roll": -0.3246727877137463,
+            "roll-keep-keep": -0.3992171490279794,
+            "roll-keep-roll": -0.355176642549813,
+            "roll-roll-keep": 0.31320660804919653,
+            "roll-roll-roll": -0.3725259076033032
+        },
+        "542": {
+            "keep-keep-keep": -0.4976440458939817,
+            "keep-keep-roll": -0.3960177620747125,
+            "keep-roll-keep": -0.42376312243105463,
+            "keep-roll-roll": -0.39588597829500294,
+            "roll-keep-keep": -0.4109402745815258,
+            "roll-keep-roll": 0.07675107481836556,
+            "roll-roll-keep": -0.404807485686605,
+            "roll-roll-roll": -0.40579555901497366
+        },
+        "543": {
+            "keep-keep-keep": 0.6133239454346485,
+            "keep-keep-roll": -0.2760312167899068,
+            "keep-roll-keep": -0.2766040685782296,
+            "keep-roll-roll": -0.2097038752159716,
+            "roll-keep-keep": -0.25205457150213073,
+            "roll-keep-roll": -0.19453521539438928,
+            "roll-roll-keep": -0.4519441777535578,
+            "roll-roll-roll": -0.25447914578924125
+        },
+        "544": {
+            "keep-keep-keep": -0.49959353153505637,
+            "keep-keep-roll": -0.3194646008473353,
+            "keep-roll-keep": -0.3293591666124164,
+            "keep-roll-roll": -0.32810487449308967,
+            "roll-keep-keep": -0.3244375380683947,
+            "roll-keep-roll": -0.3704650146919386,
+            "roll-roll-keep": -0.3360864558447935,
+            "roll-roll-roll": -0.050672193327860715
+        },
+        "551": {
+            "keep-keep-keep": -0.37547013716688615,
+            "keep-keep-roll": -0.37863274139521685,
+            "keep-roll-keep": -0.37814678992034445,
+            "keep-roll-roll": -0.4279265967591832,
+            "roll-keep-keep": -0.3505048347824258,
+            "roll-keep-roll": -0.4613328780429994,
+            "roll-roll-keep": 0.03771162916718937,
+            "roll-roll-roll": -0.3647192218753883
+        },
+        "552": {
+            "keep-keep-keep": -0.367142796381151,
+            "keep-keep-roll": -0.3558544416127811,
+            "keep-roll-keep": -0.3348907414557041,
+            "keep-roll-roll": -0.4253173491572999,
+            "roll-keep-keep": -0.3175751070889222,
+            "roll-keep-roll": -0.34550462431530293,
+            "roll-roll-keep": -0.33770456156569584,
+            "roll-roll-roll": -0.3491894769103059
+        },
+        "553": {
+            "keep-keep-keep": -0.4043814617442544,
+            "keep-keep-roll": -0.42227773854547945,
+            "keep-roll-keep": -0.3803956894536069,
+            "keep-roll-roll": -0.3698323974074762,
+            "roll-keep-keep": -0.3482353827086711,
+            "roll-keep-roll": -0.38430071555003054,
+            "roll-roll-keep": -0.37689288744326976,
+            "roll-roll-roll": 0.10886114740856857
+        },
+        "554": {
+            "keep-keep-keep": -0.39439151319757726,
+            "keep-keep-roll": -0.36938642805137256,
+            "keep-roll-keep": -0.3733716333965932,
+            "keep-roll-roll": -0.42001651220570846,
+            "roll-keep-keep": -0.36551451066011564,
+            "roll-keep-roll": -0.37204748166633894,
+            "roll-roll-keep": -0.3642221565233401,
+            "roll-roll-roll": 0.1830596459767358
+        },
+        "555": {
+            "keep-keep-keep": 0.5362706810480214,
+            "keep-keep-roll": -0.10480841356530748,
+            "keep-roll-keep": -0.0167215636422058,
+            "keep-roll-roll": -0.20482893746618724,
+            "roll-keep-keep": -0.09922055302870875,
+            "roll-keep-roll": -0.18997711667157552,
+            "roll-roll-keep": -0.058257755121841365,
+            "roll-roll-roll": -0.20963723077018656
+        },
+        "611": {
+            "keep-keep-keep": 0.6080243051524963,
+            "keep-keep-roll": 0.11925470642120398,
+            "keep-roll-keep": -0.1350150263358262,
+            "keep-roll-roll": 0.0005233248516943179,
+            "roll-keep-keep": 0.1966714147393294,
+            "roll-keep-roll": -0.10760306465394867,
+            "roll-roll-keep": -0.3009648452777637,
+            "roll-roll-roll": -0.1435828542274089
+        },
+        "621": {
+            "keep-keep-keep": -0.4590294836189178,
+            "keep-keep-roll": -0.4634643439057443,
+            "keep-roll-keep": -0.5052955282727377,
+            "keep-roll-roll": -0.4547059562426863,
+            "roll-keep-keep": -0.4865941297422375,
+            "roll-keep-roll": -0.4673588880008277,
+            "roll-roll-keep": 0.055911705747581975,
+            "roll-roll-roll": -0.460632316741431
+        },
+        "622": {
+            "keep-keep-keep": -0.47628764171603644,
+            "keep-keep-roll": -0.46070576339211333,
+            "keep-roll-keep": -0.45173293829432004,
+            "keep-roll-roll": -0.4606724284317356,
+            "roll-keep-keep": -0.44602297939290203,
+            "roll-keep-roll": -0.44336836858843176,
+            "roll-roll-keep": -0.4886660876041313,
+            "roll-roll-roll": -0.15296493415358225
+        },
+        "631": {
+            "keep-keep-keep": -0.4040385349278559,
+            "keep-keep-roll": -0.4631372400830771,
+            "keep-roll-keep": -0.4005172942961378,
+            "keep-roll-roll": -0.4157436580651783,
+            "roll-keep-keep": -0.44245467420889706,
+            "roll-keep-roll": -0.43671997704240917,
+            "roll-roll-keep": 0.2293821468900405,
+            "roll-roll-roll": -0.4402287811566854
+        },
+        "632": {
+            "keep-keep-keep": -0.4674836008405868,
+            "keep-keep-roll": -0.4958648337051219,
+            "keep-roll-keep": -0.4845326547766382,
+            "keep-roll-roll": -0.37968037132278504,
+            "roll-keep-keep": -0.5023498246943308,
+            "roll-keep-roll": -0.4911033497062004,
+            "roll-roll-keep": -0.4758929161857557,
+            "roll-roll-roll": -0.4937356696506393
+        },
+        "633": {
+            "keep-keep-keep": -0.368198170755916,
+            "keep-keep-roll": -0.3139179644193524,
+            "keep-roll-keep": -0.3189825344739665,
+            "keep-roll-roll": -0.3183915497569452,
+            "roll-keep-keep": -0.3205206774030564,
+            "roll-keep-roll": -0.3324538339662842,
+            "roll-roll-keep": -0.3179916474497294,
+            "roll-roll-roll": 0.19949356780517635
+        },
+        "641": {
+            "keep-keep-keep": -0.46532919135908457,
+            "keep-keep-roll": -0.49047984074187345,
+            "keep-roll-keep": -0.47680194631908324,
+            "keep-roll-roll": -0.511241712937454,
+            "roll-keep-keep": -0.46150151139122575,
+            "roll-keep-roll": -0.5907891540998785,
+            "roll-roll-keep": 0.25285630636988377,
+            "roll-roll-roll": -0.47565967562848965
+        },
+        "642": {
+            "keep-keep-keep": -0.4032188499226441,
+            "keep-keep-roll": -0.441163296891411,
+            "keep-roll-keep": 0.09567158368644704,
+            "keep-roll-roll": -0.4216576958150702,
+            "roll-keep-keep": -0.4234845977179005,
+            "roll-keep-roll": -0.45208481368805886,
+            "roll-roll-keep": -0.45986849649343764,
+            "roll-roll-roll": -0.5026637807464474
+        },
+        "643": {
+            "keep-keep-keep": 0.33460516036099963,
+            "keep-keep-roll": -0.4310888175500207,
+            "keep-roll-keep": -0.4349923777997847,
+            "keep-roll-roll": -0.40862228684197743,
+            "roll-keep-keep": -0.4611650664377204,
+            "roll-keep-roll": -0.4041887967539559,
+            "roll-roll-keep": -0.41309872748372434,
+            "roll-roll-roll": -0.4161929285531172
+        },
+        "644": {
+            "keep-keep-keep": -0.4440663444275009,
+            "keep-keep-roll": -0.44170467573283934,
+            "keep-roll-keep": -0.4180903886462082,
+            "keep-roll-roll": -0.4207368798919896,
+            "roll-keep-keep": -0.4594879199391101,
+            "roll-keep-roll": -0.45056375653543324,
+            "roll-roll-keep": -0.009838955899296651,
+            "roll-roll-roll": -0.41439136540787236
+        },
+        "651": {
+            "keep-keep-keep": -0.4626473685829463,
+            "keep-keep-roll": -0.45234224539722123,
+            "keep-roll-keep": 0.038034502672335414,
+            "keep-roll-roll": -0.4630403171803884,
+            "roll-keep-keep": -0.45299059388000296,
+            "roll-keep-roll": -0.48515359353511356,
+            "roll-roll-keep": -0.48307079380814744,
+            "roll-roll-roll": -0.4911111067752256
+        },
+        "652": {
+            "keep-keep-keep": -0.4950560282419396,
+            "keep-keep-roll": -0.4598976235282536,
+            "keep-roll-keep": -0.07247990610668095,
+            "keep-roll-roll": -0.46084540597823076,
+            "roll-keep-keep": -0.5582788919525873,
+            "roll-keep-roll": -0.4620336226673339,
+            "roll-roll-keep": -0.47672735860174076,
+            "roll-roll-roll": -0.4759041641275421
+        },
+        "653": {
+            "keep-keep-keep": -0.4451720185765544,
+            "keep-keep-roll": -0.461633879360244,
+            "keep-roll-keep": -0.46006596716713544,
+            "keep-roll-roll": -0.2668302264749925,
+            "roll-keep-keep": -0.448382807567424,
+            "roll-keep-roll": -0.46951713431537745,
+            "roll-roll-keep": -0.46692397681154896,
+            "roll-roll-roll": -0.455773774081939
+        },
+        "654": {
+            "keep-keep-keep": 0.6001236023874065,
+            "keep-keep-roll": -0.24216312414401375,
+            "keep-roll-keep": -0.16043430786077306,
+            "keep-roll-roll": -0.2410656461469309,
+            "roll-keep-keep": -0.2503373076363392,
+            "roll-keep-roll": -0.4552718012739482,
+            "roll-roll-keep": -0.14542851926407036,
+            "roll-roll-roll": -0.283788814357384
+        },
+        "655": {
+            "keep-keep-keep": -0.4238870465614124,
+            "keep-keep-roll": 0.26108990505892493,
+            "keep-roll-keep": -0.44379836940944173,
+            "keep-roll-roll": -0.4383505472620799,
+            "roll-keep-keep": -0.47370538653487415,
+            "roll-keep-roll": -0.4802056456376227,
+            "roll-roll-keep": -0.4436231639343735,
+            "roll-roll-roll": -0.438366364149265
+        },
+        "661": {
+            "keep-keep-keep": -0.4683206432518777,
+            "keep-keep-roll": -0.4551945493948377,
+            "keep-roll-keep": -0.43470874473572685,
+            "keep-roll-roll": -0.43311972109064956,
+            "roll-keep-keep": -0.447265192163088,
+            "roll-keep-roll": -0.47612407927212197,
+            "roll-roll-keep": 0.33126396422895743,
+            "roll-roll-roll": -0.4639649922620135
+        },
+        "662": {
+            "keep-keep-keep": -0.287284704875048,
+            "keep-keep-roll": -0.49045265621827816,
+            "keep-roll-keep": -0.4945586328453616,
+            "keep-roll-roll": -0.5177723039811575,
+            "roll-keep-keep": -0.5024333977796507,
+            "roll-keep-roll": -0.5034482403774968,
+            "roll-roll-keep": -0.4883079047435227,
+            "roll-roll-roll": -0.4860190352540933
+        },
+        "663": {
+            "keep-keep-keep": -0.4020565014453713,
+            "keep-keep-roll": -0.40751997718586264,
+            "keep-roll-keep": -0.3244081047120463,
+            "keep-roll-roll": -0.4279596806404693,
+            "roll-keep-keep": -0.3975697034980117,
+            "roll-keep-roll": -0.41830047783672397,
+            "roll-roll-keep": -0.4295590800650413,
+            "roll-roll-roll": -0.4405505000729858
+        },
+        "664": {
+            "keep-keep-keep": -0.5051628950949425,
+            "keep-keep-roll": -0.48215545587310626,
+            "keep-roll-keep": -0.47558296522698174,
+            "keep-roll-roll": 0.3279744674267162,
+            "roll-keep-keep": -0.4785679081510722,
+            "roll-keep-roll": -0.4977123027888788,
+            "roll-roll-keep": -0.48935026706930773,
+            "roll-roll-roll": -0.49940969563662074
+        },
+        "665": {
+            "keep-keep-keep": -0.4453448153630333,
+            "keep-keep-roll": -0.458689473190654,
+            "keep-roll-keep": -0.43281690486786184,
+            "keep-roll-roll": 0.19083353329909353,
+            "roll-keep-keep": -0.4477490914272426,
+            "roll-keep-roll": -0.4380974806057447,
+            "roll-roll-keep": -0.4327040144172626,
+            "roll-roll-roll": -0.4443622011741466
+        },
+        "666": {
+            "keep-keep-keep": 0.6558151600100599,
+            "keep-keep-roll": 0.08058943810297137,
+            "keep-roll-keep": -0.02624617079013916,
+            "keep-roll-roll": 0.05400310707532349,
+            "roll-keep-keep": 0.008471975575282342,
+            "roll-keep-roll": -0.0590192454068562,
+            "roll-roll-keep": -0.09792589361389836,
+            "roll-roll-roll": -0.0022428035788630563
+        },
+        "sleep": {
+            "sleep": 0
+        }
+    },
+    "2": {
+        "111": {
+            "keep-keep-keep": 0.6812493483854135,
+            "keep-keep-roll": 0.07448074947071341,
+            "keep-roll-keep": 0.0,
+            "keep-roll-roll": -0.1,
+            "roll-keep-keep": 0.06880282372489044,
+            "roll-keep-roll": 0.0,
+            "roll-roll-keep": -0.0510582147004914,
+            "roll-roll-roll": 0.0
+        },
+        "211": {
+            "keep-keep-keep": 0.6800265851645051,
+            "keep-keep-roll": -0.299512,
+            "keep-roll-keep": -0.271,
+            "keep-roll-roll": -0.24172720757172897,
+            "roll-keep-keep": -0.23776569580531423,
+            "roll-keep-roll": -0.2947770132028492,
+            "roll-roll-keep": -0.2443907120651983,
+            "roll-roll-roll": -0.23163432177703303
+        },
+        "221": {
+            "keep-keep-keep": -0.68618940391,
+            "keep-keep-roll": -0.6902756239494008,
+            "keep-roll-keep": -0.461319890107191,
+            "keep-roll-roll": -0.7062583441153182,
+            "roll-keep-keep": -0.6859261997237462,
+            "roll-keep-roll": -0.7051819411733934,
+            "roll-roll-keep": -0.6886643740229177,
+            "roll-roll-roll": -0.7085302263936146
+        },
+        "222": {
+            "keep-keep-keep": -0.1538108937009113,
+            "keep-keep-roll": -0.302579720916336,
+            "keep-roll-keep": -0.2870482463675442,
+            "keep-roll-roll": -0.271,
+            "roll-keep-keep": -0.30078974937662695,
+            "roll-keep-roll": -0.2761040617594246,
+            "roll-roll-keep": -0.271,
+            "roll-roll-roll": -0.30835051971933847
+        },
+        "311": {
+            "keep-keep-keep": 0.5030700728628481,
+            "keep-keep-roll": -0.288872199682717,
+            "keep-roll-keep": -0.19,
+            "keep-roll-roll": -0.1630720197641395,
+            "roll-keep-keep": -0.1718535239563279,
+            "roll-keep-roll": -0.19709445454714672,
+            "roll-roll-keep": -0.20449672604489308,
+            "roll-roll-roll": -0.1575083053745868
+        },
+        "321": {
+            "keep-keep-keep": -0.07345707223995881,
+            "keep-keep-roll": -0.6216491518870937,
+            "keep-roll-keep": -0.7385231110657644,
+            "keep-roll-roll": -0.6154118457010509,
+            "roll-keep-keep": -0.5373959724691573,
+            "roll-keep-roll": -0.6231677021144569,
+            "roll-roll-keep": -0.6327432459388832,
+            "roll-roll-roll": -0.6076008286662733
+        },
+        "322": {
+            "keep-keep-keep": -0.6571100882229932,
+            "keep-keep-roll": -0.7803757134272884,
+            "keep-roll-keep": -0.7654628501366129,
+            "keep-roll-roll": -0.7777788632386134,
+            "roll-keep-keep": -0.7722848387648286,
+            "roll-keep-roll": -0.7666564220050197,
+            "roll-roll-keep": -0.7821525813887246,
+            "roll-roll-roll": -0.6402036098642937
+        },
+        "331": {
+            "keep-keep-keep": -0.7479927436464917,
+            "keep-keep-roll": -0.7412814776692508,
+            "keep-roll-keep": -0.7461224590993846,
+            "keep-roll-roll": -0.7318578890806321,
+            "roll-keep-keep": -0.6003862954532321,
+            "roll-keep-roll": -0.7349097067229529,
+            "roll-roll-keep": -0.7400468061859731,
+            "roll-roll-roll": -0.7357809113774546
+        },
+        "332": {
+            "keep-keep-keep": -0.701932092179243,
+            "keep-keep-roll": -0.7595410153215018,
+            "keep-roll-keep": -0.7522318886425867,
+            "keep-roll-roll": -0.7579556553444268,
+            "roll-keep-keep": -0.506527630092489,
+            "roll-keep-roll": -0.749381028131948,
+            "roll-roll-keep": -0.7622941346495431,
+            "roll-roll-roll": -0.7674743123958898
+        },
+        "333": {
+            "keep-keep-keep": 0.2357166786291375,
+            "keep-keep-roll": -0.29910856750768056,
+            "keep-roll-keep": -0.3174367328836401,
+            "keep-roll-roll": -0.25734915626236293,
+            "roll-keep-keep": -0.28,
+            "roll-keep-roll": -0.3110776254856607,
+            "roll-roll-keep": -0.271,
+            "roll-roll-roll": -0.24559815485489006
+        },
+        "411": {
+            "keep-keep-keep": 0.390351611063115,
+            "keep-keep-roll": -0.20237178702699316,
+            "keep-roll-keep": -0.19,
+            "keep-roll-roll": -0.22729031000000002,
+            "roll-keep-keep": -0.16434956461847364,
+            "roll-keep-roll": -0.2722960341243302,
+            "roll-roll-keep": -0.1,
+            "roll-roll-roll": -0.09532017994551109
+        },
+        "421": {
+            "keep-keep-keep": 0.9092425038687757,
+            "keep-keep-roll": -0.030392711808022582,
+            "keep-roll-keep": -0.07471376950749532,
+            "keep-roll-roll": -0.2024117727000908,
+            "roll-keep-keep": -0.22123544152726893,
+            "roll-keep-roll": -0.3637552661144642,
+            "roll-roll-keep": -0.1,
+            "roll-roll-roll": -0.22692648497654
+        },
+        "422": {
+            "keep-keep-keep": -0.6971545834527262,
+            "keep-keep-roll": -0.7434662940978124,
+            "keep-roll-keep": -0.7488879316794006,
+            "keep-roll-roll": -0.5543365850042994,
+            "roll-keep-keep": -0.7475638815213476,
+            "roll-keep-roll": -0.7549647821685908,
+            "roll-roll-keep": -0.7428736387265074,
+            "roll-roll-roll": -0.7599858311730957
+        },
+        "431": {
+            "keep-keep-keep": -0.705845535950834,
+            "keep-keep-roll": -0.763760463973434,
+            "keep-roll-keep": -0.7610428405664461,
+            "keep-roll-roll": -0.75020678651858,
+            "roll-keep-keep": -0.7924838595327983,
+            "roll-keep-roll": -0.7765746822602027,
+            "roll-roll-keep": -0.23448426131258218,
+            "roll-roll-roll": -0.758082080211994
+        },
+        "432": {
+            "keep-keep-keep": 0.43255887642924784,
+            "keep-keep-roll": -0.5993111997883562,
+            "keep-roll-keep": -0.594281876946296,
+            "keep-roll-roll": -0.5784722111411318,
+            "roll-keep-keep": -0.6012237406291119,
+            "roll-keep-roll": -0.5949441563885411,
+            "roll-roll-keep": -0.5811494229158121,
+            "roll-roll-roll": -0.5647317633310078
+        },
+        "433": {
+            "keep-keep-keep": -0.6084407212700027,
+            "keep-keep-roll": -0.771860037934919,
+            "keep-roll-keep": -0.7795505991721577,
+            "keep-roll-roll": -0.7882465322436133,
+            "roll-keep-keep": -0.7745955313984291,
+            "roll-keep-roll": -0.7754784366142983,
+            "roll-roll-keep": -0.7844109872583445,
+            "roll-roll-roll": -0.6504440164969332
+        },
+        "441": {
+            "keep-keep-keep": -0.6647937047015946,
+            "keep-keep-roll": -0.7373784163662424,
+            "keep-roll-keep": -0.7248480648319314,
+            "keep-roll-roll": -0.721863303653715,
+            "roll-keep-keep": -0.7312396302862652,
+            "roll-keep-roll": -0.7376155805982676,
+            "roll-roll-keep": -0.7218246195002163,
+            "roll-roll-roll": -0.6825459417559883
+        },
+        "442": {
+            "keep-keep-keep": -0.5465889131753,
+            "keep-keep-roll": -0.7335533012971903,
+            "keep-roll-keep": -0.7367278344446837,
+            "keep-roll-roll": -0.7424951853061147,
+            "roll-keep-keep": -0.7435634791706163,
+            "roll-keep-roll": -0.406284850492795,
+            "roll-roll-keep": -0.7372571072502504,
+            "roll-roll-roll": -0.7453428687869944
+        },
+        "443": {
+            "keep-keep-keep": -0.76306590468995,
+            "keep-keep-roll": -0.7888958459898525,
+            "keep-roll-keep": -0.7921677998242787,
+            "keep-roll-roll": -0.8034141187014152,
+            "roll-keep-keep": -0.7994472273331236,
+            "roll-keep-roll": -0.7280793664866849,
+            "roll-roll-keep": -0.807120908822721,
+            "roll-roll-roll": -0.7872565295011843
+        },
+        "444": {
+            "keep-keep-keep": 0.1010740102202412,
+            "keep-keep-roll": -0.271,
+            "keep-roll-keep": -0.271,
+            "keep-roll-roll": -0.271,
+            "roll-keep-keep": -0.22702573847626284,
+            "roll-keep-roll": -0.21500330880647778,
+            "roll-roll-keep": -0.22032517924424855,
+            "roll-roll-roll": -0.2120269013294433
+        },
+        "511": {
+            "keep-keep-keep": 0.5020996625358579,
+            "keep-keep-roll": -0.2891243391120668,
+            "keep-roll-keep": -0.3190087360473993,
+            "keep-roll-roll": -0.12914797756699,
+            "roll-keep-keep": -0.13753947979197695,
+            "roll-keep-roll": -0.22278604438571845,
+            "roll-roll-keep": -0.1056151,
+            "roll-roll-roll": -0.17561097409973214
+        },
+        "521": {
+            "keep-keep-keep": -0.3746281147931596,
+            "keep-keep-roll": -0.7781350164892327,
+            "keep-roll-keep": -0.7854302121128786,
+            "keep-roll-roll": -0.7798379644449169,
+            "roll-keep-keep": -0.8034659104690616,
+            "roll-keep-roll": -0.7841231153421496,
+            "roll-roll-keep": -0.7800253144303722,
+            "roll-roll-roll": -0.6294397072741932
+        },
+        "522": {
+            "keep-keep-keep": -0.573481092033173,
+            "keep-keep-roll": -0.7511260044830794,
+            "keep-roll-keep": -0.6926923372736506,
+            "keep-roll-roll": -0.7456156011535859,
+            "roll-keep-keep": -0.7421718427459687,
+            "roll-keep-roll": -0.7340560198053299,
+            "roll-roll-keep": -0.7413221264647792,
+            "roll-roll-roll": -0.7431329796508506
+        },
+        "531": {
+            "keep-keep-keep": -0.4555906186806732,
+            "keep-keep-roll": -0.712719533058468,
+            "keep-roll-keep": -0.7063251285089714,
+            "keep-roll-roll": -0.7057109913550834,
+            "roll-keep-keep": -0.7233289471067195,
+            "roll-keep-roll": -0.7232107190021525,
+            "roll-roll-keep": -0.7154150653230525,
+            "roll-roll-roll": -0.3526107864163378
+        },
+        "532": {
+            "keep-keep-keep": -0.5097002236965018,
+            "keep-keep-roll": -0.7786600621337517,
+            "keep-roll-keep": -0.7684972686327429,
+            "keep-roll-roll": -0.7716481925216724,
+            "roll-keep-keep": -0.761124216354261,
+            "roll-keep-roll": -0.7583024142599636,
+            "roll-roll-keep": -0.7567558376435044,
+            "roll-roll-roll": -0.7794784522071979
+        },
+        "533": {
+            "keep-keep-keep": -0.40046989269255506,
+            "keep-keep-roll": -0.7187314368701595,
+            "keep-roll-keep": -0.7404739508159999,
+            "keep-roll-roll": -0.7226771081455111,
+            "roll-keep-keep": -0.7386885734712432,
+            "roll-keep-roll": -0.7366918626256389,
+            "roll-roll-keep": -0.7193960619100997,
+            "roll-roll-roll": -0.6464545874863511
+        },
+        "541": {
+            "keep-keep-keep": -0.5942683913306689,
+            "keep-keep-roll": -0.7487848953192852,
+            "keep-roll-keep": -0.7568530964096731,
+            "keep-roll-roll": -0.7517296610747534,
+            "roll-keep-keep": -0.7509978134545164,
+            "roll-keep-roll": -0.5846581800114954,
+            "roll-roll-keep": -0.7532870659347723,
+            "roll-roll-roll": -0.755096318186547
+        },
+        "542": {
+            "keep-keep-keep": -0.39956870464436056,
+            "keep-keep-roll": -0.7462486492562443,
+            "keep-roll-keep": -0.7953810615028102,
+            "keep-roll-roll": -0.7429181412145762,
+            "roll-keep-keep": -0.7765537024254822,
+            "roll-keep-roll": -0.7719483775139017,
+            "roll-roll-keep": -0.7504790078495498,
+            "roll-roll-roll": -0.48289034147648635
+        },
+        "543": {
+            "keep-keep-keep": 0.5234165074611045,
+            "keep-keep-roll": -0.5151234083367635,
+            "keep-roll-keep": -0.5689579816606356,
+            "keep-roll-roll": -0.5272061477074224,
+            "roll-keep-keep": -0.5449756522780258,
+            "roll-keep-roll": -0.5219802415919819,
+            "roll-roll-keep": -0.5805533450795834,
+            "roll-roll-roll": -0.5049783636609945
+        },
+        "544": {
+            "keep-keep-keep": -0.491392549175133,
+            "keep-keep-roll": -0.7648349660948992,
+            "keep-roll-keep": -0.47690449428938675,
+            "keep-roll-roll": -0.7543417353563762,
+            "roll-keep-keep": -0.7642160441872871,
+            "roll-keep-roll": -0.7578313965212407,
+            "roll-roll-keep": -0.7737175996129128,
+            "roll-roll-roll": -0.7579226675021806
+        },
+        "551": {
+            "keep-keep-keep": -0.4999256947021493,
+            "keep-keep-roll": -0.7246165687976198,
+            "keep-roll-keep": -0.7277821324608837,
+            "keep-roll-roll": -0.7170615526527738,
+            "roll-keep-keep": -0.7306276933122428,
+            "roll-keep-roll": -0.7066715689328835,
+            "roll-roll-keep": -0.7136872832776806,
+            "roll-roll-roll": -0.6892274826654264
+        },
+        "552": {
+            "keep-keep-keep": -0.5031787395111782,
+            "keep-keep-roll": -0.7076993990410896,
+            "keep-roll-keep": -0.7033036985501678,
+            "keep-roll-roll": -0.7228659549958258,
+            "roll-keep-keep": -0.7080010568084147,
+            "roll-keep-roll": -0.7214181503115504,
+            "roll-roll-keep": -0.5484776745034026,
+            "roll-roll-roll": -0.7121497214661887
+        },
+        "553": {
+            "keep-keep-keep": -0.47997014184802733,
+            "keep-keep-roll": -0.7801622591198101,
+            "keep-roll-keep": -0.4630812221059683,
+            "keep-roll-roll": -0.7868769088617781,
+            "roll-keep-keep": -0.7826106481380135,
+            "roll-keep-roll": -0.7792982909593472,
+            "roll-roll-keep": -0.7976115492662161,
+            "roll-roll-roll": -0.7866218906787276
+        },
+        "554": {
+            "keep-keep-keep": -0.6814652643204658,
+            "keep-keep-roll": -0.7409510855278056,
+            "keep-roll-keep": -0.6651993146661195,
+            "keep-roll-roll": -0.7528016267210286,
+            "roll-keep-keep": -0.7462084928376835,
+            "roll-keep-roll": -0.745488238960014,
+            "roll-roll-keep": -0.7476485784259534,
+            "roll-roll-roll": -0.7475026381264891
+        },
+        "555": {
+            "keep-keep-keep": 0.24569458019222437,
+            "keep-keep-roll": -0.199,
+            "keep-roll-keep": -0.13339,
+            "keep-roll-roll": -0.14758810527704325,
+            "roll-keep-keep": -0.1,
+            "roll-keep-roll": -0.13456208303954145,
+            "roll-roll-keep": -0.1853394925153895,
+            "roll-roll-roll": -0.16493873371860263
+        },
+        "611": {
+            "keep-keep-keep": 0.54927992712178,
+            "keep-keep-roll": -0.21916895840580658,
+            "keep-roll-keep": -0.1,
+            "keep-roll-roll": -0.1,
+            "roll-keep-keep": -0.19,
+            "roll-keep-roll": -0.047003809503211896,
+            "roll-roll-keep": -0.13652942343431093,
+            "roll-roll-roll": -0.24830741329164213
+        },
+        "621": {
+            "keep-keep-keep": 0.18104064786844057,
+            "keep-keep-roll": -0.6896887045320058,
+            "keep-roll-keep": -0.6734095456024649,
+            "keep-roll-roll": -0.6771468624241462,
+            "roll-keep-keep": -0.6906001216371649,
+            "roll-keep-roll": -0.6681843404777345,
+            "roll-roll-keep": -0.48307746468282137,
+            "roll-roll-roll": -0.6893216783049725
+        },
+        "622": {
+            "keep-keep-keep": -0.6555851245980263,
+            "keep-keep-roll": -0.686619005422394,
+            "keep-roll-keep": -0.6604881232434608,
+            "keep-roll-roll": -0.6860508248055384,
+            "roll-keep-keep": -0.6644516637043772,
+            "roll-keep-roll": -0.6550478784422137,
+            "roll-roll-keep": -0.6574551035237483,
+            "roll-roll-roll": -0.6886452000670746
+        },
+        "631": {
+            "keep-keep-keep": -0.26192433406066296,
+            "keep-keep-roll": -0.6634936196339729,
+            "keep-roll-keep": -0.6444493567866381,
+            "keep-roll-roll": -0.5847830214512288,
+            "roll-keep-keep": -0.6475397544273586,
+            "roll-keep-roll": -0.658037957845319,
+            "roll-roll-keep": -0.6504784386644222,
+            "roll-roll-roll": -0.6669825780581644
+        },
+        "632": {
+            "keep-keep-keep": -0.23101961050610145,
+            "keep-keep-roll": -0.673259466658906,
+            "keep-roll-keep": -0.6068894590151195,
+            "keep-roll-roll": -0.6663927123292783,
+            "roll-keep-keep": -0.6798545158580077,
+            "roll-keep-roll": -0.6782464552245396,
+            "roll-roll-keep": -0.6504423220846031,
+            "roll-roll-roll": -0.6585099491191588
+        },
+        "633": {
+            "keep-keep-keep": -0.5868859656637692,
+            "keep-keep-roll": -0.6391411517740426,
+            "keep-roll-keep": -0.6418767413676335,
+            "keep-roll-roll": -0.6577827355161906,
+            "roll-keep-keep": -0.6495395008780875,
+            "roll-keep-roll": -0.6353380232479633,
+            "roll-roll-keep": -0.6409017179138625,
+            "roll-roll-roll": -0.6382206675098478
+        },
+        "641": {
+            "keep-keep-keep": -0.5885143272744736,
+            "keep-keep-roll": -0.6396877308016358,
+            "keep-roll-keep": -0.6247834872356623,
+            "keep-roll-roll": -0.6485191650573039,
+            "roll-keep-keep": -0.6521228094598834,
+            "roll-keep-roll": -0.6667580709689086,
+            "roll-roll-keep": -0.6525876096483296,
+            "roll-roll-roll": -0.6520441041620387
+        },
+        "642": {
+            "keep-keep-keep": -0.4273216716053151,
+            "keep-keep-roll": -0.5589108334598974,
+            "keep-roll-keep": -0.6522038621215233,
+            "keep-roll-roll": -0.6402096122268096,
+            "roll-keep-keep": -0.6658805246826666,
+            "roll-keep-roll": -0.6629943604103238,
+            "roll-roll-keep": -0.6449474026121201,
+            "roll-roll-roll": -0.6509979999571456
+        },
+        "643": {
+            "keep-keep-keep": -0.26337385966495774,
+            "keep-keep-roll": -0.6952860579289928,
+            "keep-roll-keep": -0.5423713557863301,
+            "keep-roll-roll": -0.7057407766384042,
+            "roll-keep-keep": -0.7043731275994866,
+            "roll-keep-roll": -0.6958468645867799,
+            "roll-roll-keep": -0.6949054319369717,
+            "roll-roll-roll": -0.695369992223618
+        },
+        "644": {
+            "keep-keep-keep": -0.3366827764182344,
+            "keep-keep-roll": -0.6164277087936264,
+            "keep-roll-keep": -0.6158895502031119,
+            "keep-roll-roll": -0.5991839153290826,
+            "roll-keep-keep": -0.5995131889165276,
+            "roll-keep-roll": -0.6273056386648714,
+            "roll-roll-keep": -0.6256101984329991,
+            "roll-roll-roll": -0.5154655761281124
+        },
+        "651": {
+            "keep-keep-keep": -0.37375620672714394,
+            "keep-keep-roll": -0.6627804157739187,
+            "keep-roll-keep": -0.6600642684944793,
+            "keep-roll-roll": -0.6415378694538801,
+            "roll-keep-keep": -0.6767394428112012,
+            "roll-keep-roll": -0.648553092426276,
+            "roll-roll-keep": -0.7001538280956882,
+            "roll-roll-roll": -0.6697229451227297
+        },
+        "652": {
+            "keep-keep-keep": -0.5444086059950302,
+            "keep-keep-roll": -0.7073334086791854,
+            "keep-roll-keep": -0.6777854716734806,
+            "keep-roll-roll": -0.4217642610758122,
+            "roll-keep-keep": -0.6900692471667076,
+            "roll-keep-roll": -0.6619375833202793,
+            "roll-roll-keep": -0.6717732927292686,
+            "roll-roll-roll": -0.6600561848751274
+        },
+        "653": {
+            "keep-keep-keep": -0.5905509606911755,
+            "keep-keep-roll": -0.5080619297930009,
+            "keep-roll-keep": -0.6800689251437328,
+            "keep-roll-roll": -0.6708643896665971,
+            "roll-keep-keep": -0.6661543451045828,
+            "roll-keep-roll": -0.6794813031722491,
+            "roll-roll-keep": -0.6720474858380908,
+            "roll-roll-roll": -0.6822365654534832
+        },
+        "654": {
+            "keep-keep-keep": -0.0032306822867869678,
+            "keep-keep-roll": -0.4671955782433296,
+            "keep-roll-keep": -0.48101494742061224,
+            "keep-roll-roll": -0.47241351619085725,
+            "roll-keep-keep": -0.5291182997886057,
+            "roll-keep-roll": -0.4510835364606042,
+            "roll-roll-keep": -0.4562135011723036,
+            "roll-roll-roll": -0.4431074837819051
+        },
+        "655": {
+            "keep-keep-keep": 0.09545755229014972,
+            "keep-keep-roll": -0.6519601898532946,
+            "keep-roll-keep": -0.6448394555014068,
+            "keep-roll-roll": -0.630995775399233,
+            "roll-keep-keep": -0.6730350721182167,
+            "roll-keep-roll": -0.6452944483294529,
+            "roll-roll-keep": -0.6483280806277026,
+            "roll-roll-roll": -0.6096167816842177
+        },
+        "661": {
+            "keep-keep-keep": -0.42645574454942536,
+            "keep-keep-roll": -0.5970261125822158,
+            "keep-roll-keep": -0.5840839974786588,
+            "keep-roll-roll": -0.6097339163966597,
+            "roll-keep-keep": -0.6189583219165151,
+            "roll-keep-roll": -0.6049188515256925,
+            "roll-roll-keep": -0.5616440133950511,
+            "roll-roll-roll": -0.5893711775124799
+        },
+        "662": {
+            "keep-keep-keep": -0.38398923852659267,
+            "keep-keep-roll": -0.6558301452454476,
+            "keep-roll-keep": -0.6783404729931567,
+            "keep-roll-roll": -0.6734079801738967,
+            "roll-keep-keep": -0.6706548780453007,
+            "roll-keep-roll": -0.6494031449254717,
+            "roll-roll-keep": -0.6703370729063176,
+            "roll-roll-roll": -0.6432417521304613
+        },
+        "663": {
+            "keep-keep-keep": -0.191030707123001,
+            "keep-keep-roll": -0.47567091070370404,
+            "keep-roll-keep": -0.618748070475018,
+            "keep-roll-roll": -0.6157550578783662,
+            "roll-keep-keep": -0.6163450129990401,
+            "roll-keep-roll": -0.6297200828685745,
+            "roll-roll-keep": -0.6315229940440242,
+            "roll-roll-roll": -0.6205255297728373
+        },
+        "664": {
+            "keep-keep-keep": -0.609621271576471,
+            "keep-keep-roll": -0.6387486469329099,
+            "keep-roll-keep": -0.63420929680618,
+            "keep-roll-roll": -0.6032021025487792,
+            "roll-keep-keep": -0.6520957541449245,
+            "roll-keep-roll": -0.6357895243682233,
+            "roll-roll-keep": -0.645359957085307,
+            "roll-roll-roll": -0.6363148408523077
+        },
+        "665": {
+            "keep-keep-keep": -0.2697160709579307,
+            "keep-keep-roll": -0.6147964176022007,
+            "keep-roll-keep": -0.6350499273224637,
+            "keep-roll-roll": -0.6381388752787378,
+            "roll-keep-keep": -0.5347365179787965,
+            "roll-keep-roll": -0.6157115471673631,
+            "roll-roll-keep": -0.6137432637241758,
+            "roll-roll-roll": -0.611737462993806
+        },
+        "666": {
+            "keep-keep-keep": 0.4292822793239244,
+            "keep-keep-roll": -0.22413088432004938,
+            "keep-roll-keep": -0.15332901412013528,
+            "keep-roll-roll": -0.20478665887859587,
+            "roll-keep-keep": -0.16871465376180395,
+            "roll-keep-roll": -0.19,
+            "roll-roll-keep": -0.19,
+            "roll-roll-roll": -0.1820309332732306
+        },
+        "sleep": {
+            "sleep": 0
+        }
+    }
+}
