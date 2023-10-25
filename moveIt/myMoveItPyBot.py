@@ -2,7 +2,10 @@
 """
 HackaGame player interface 
 """
+import json
 import sys, os
+
+from matplotlib import pyplot as plt
 sys.path.insert( 1, __file__.split('moveIt')[0] )
 
 import hackagames.hackapy.command as cmd
@@ -12,13 +15,27 @@ import hackagames.gameMoveIt.gameEngine as ge
 import random
 
 def log( aStr ):
-    print( aStr )
+    # print( aStr )
     pass
 
 def main():
     player= AutonomousPlayer()
-    result= player.takeASeat()
-    print( f"Average: {sum(result)/len(result)}" )
+    results= player.takeASeat()
+    print( f"Average: {sum(results)/len(results)}" )
+
+    data_file = open('q_values_moveIt.json', 'w+')
+    json.dump(player.q_values, data_file, sort_keys=True, indent=4)
+    data_file.close()
+
+    # Graph showing the evolution of the average score per each chunk_size games depending on the total number of games
+    scores= []
+    size = len(results)
+    chunk_size = 10
+    for i in range(0, size, chunk_size) :
+        s= min(i+chunk_size, size)
+        scores.append( sum([ x for x in results[i:s] ]) / (s-i) )
+    plt.plot( [ chunk_size*i for i in range(len(scores)) ], scores )
+    plt.show()
 
 class AutonomousPlayer( pl.AbsPlayer ):
 
@@ -27,6 +44,14 @@ class AutonomousPlayer( pl.AbsPlayer ):
         self._board= ge.Hexaboard()
         self._mobiles= []
         self._id= 0
+
+        self.alpha = 0.1
+        self.exploRatio = 0.4
+
+        self.former_state = ''
+        self.last_dir = ''
+
+        self.first_play = True
     
     # Player interface :
     def wakeUp(self, playerId, numberOfPlayers, gamePod):
@@ -45,7 +70,9 @@ class AutonomousPlayer( pl.AbsPlayer ):
 
 
         self.q_values = {
-            "sleep" : 0
+            "sleep" : {
+                "sleep" : 0
+            }
         }
 
         # Reports:
@@ -58,7 +85,6 @@ class AutonomousPlayer( pl.AbsPlayer ):
         self._countCycle= statePod.flag(2)
         self._score= statePod.value(1)
         self._board.mobilesFromPod( statePod )
-
 
         # Definition nouvelles variables d'états
         
@@ -91,6 +117,7 @@ class AutonomousPlayer( pl.AbsPlayer ):
         # print(self._board.shell())
 
         action= "move"
+        dirs = ['1', '2', '3', '4', '5', '6']
 
         robotx = 0
         roboty = 0
@@ -108,23 +135,21 @@ class AutonomousPlayer( pl.AbsPlayer ):
                 
                 self.objectif["dist"], self.objectif["dir"] = self.dist_and_dir(robotx, roboty, r.goalx(), r.goaly())
 
-                print(self.get_obstacles_string(r.x(), r.y()))
+                # print('Initial move : ' + str(dir))
 
-                print('Initial move : ' + str(dir))
+                # new_x, new_y = self._board.at_dir(r.x(), r.y(), dir)
 
-                new_x, new_y = self._board.at_dir(r.x(), r.y(), dir)
+                # if self._board.at(new_x, new_y).mobile():
+                #     print("Humain sur la next case, redirect ...")
+                #     possible_dirs = self._board.movesFrom(r.x(), r.y())
 
-                if self._board.at(new_x, new_y).mobile():
-                    print("Humain sur la next case, redirect ...")
-                    possible_dirs = self._board.movesFrom(r.x(), r.y())
-
-                    for pdir in possible_dirs:
-                        new_x, new_y = self._board.at_dir(r.x(), r.y(), pdir)
-                        if self._board.at(new_x, new_y).isAvailable() is True:
-                            dir = pdir
-                            break
+                #     for pdir in possible_dirs:
+                #         new_x, new_y = self._board.at_dir(r.x(), r.y(), pdir)
+                #         if self._board.at(new_x, new_y).isAvailable() is True:
+                #             dir = pdir
+                #             break
         
-                action+= " " + str(dir)
+                # action = "move " + str(dir) if dir != 'pass' else dir
 
             if r.isHuman():
                 self.humains[humain_index]["dist"], self.humains[humain_index]["dir_robot"]  = self.dist_and_dir(robotx, roboty, r.x(), r.y())
@@ -133,16 +158,44 @@ class AutonomousPlayer( pl.AbsPlayer ):
                 humain_index += 1
 
         self.state = ''.join(str(i) for i in [self.objectif["dir"], self.objectif["dist"], self.get_obstacles_string(robotx, roboty), self.humains[0]["dist"], self.humains[0]["dir_robot"], self.humains[0]["dir_move"], self.humains[1]["dist"], self.humains[1]["dir_robot"], self.humains[1]["dir_move"]])
-        print(self.state)
+        # print(self.state)
 
         if self.state not in self.q_values.keys():
-            self.q_values[self.state] = { "1":0.0, "2":0.0, "3":0.0, "4":0.0, "5":0.0, "6":0.0}
+            self.q_values[self.state] = {"1":0.0, "2":0.0, "3":0.0, "4":0.0, "5":0.0, "6":0.0, "pass": 0.0}
 
+        if random.uniform(0,1) < self.exploRatio:
+            dir = random.choice(dirs)
+        else:
+            dir_q_value = self.q_values[self.state]
+            max_q_value = -sys.maxsize - 1
+            dir = random.choice(dirs)
+
+            for key in dir_q_value.keys():
+                if dir_q_value[key] > max_q_value:
+                    dir = key
+                    max_q_value = dir_q_value[key]
+
+        # Evaluation intermédiaire des q_values
+        new_x, new_y = self._board.at_dir(robotx, roboty, int(dir))
+        reward = 10 if self.objectif["dist"] - len(self._board.path(new_x, new_y, self._mobiles[0].x(), self._mobiles[0].y())) >= 0 else -10
+
+        if self.first_play is False:
+            # print("q_values updated!")
+            self.update_q_values(self.former_state, self.last_dir, reward, self.state, dir)
+
+        action = "move " + str(dir) if dir != 'pass' else dir
+
+        self.former_state = self.state
+        self.last_dir = dir
+        self.first_play = False
+
+        # print(action)
         return action
     
     def sleep(self, result):
-        
-        log( f'---\ngame end on result: {result}' )
+        self.update_q_values(self.former_state, self.last_dir, result, 'sleep', 'sleep')
+        self.first_play = True
+        # log( f'---\ngame end on result: {result}' )
 
     def update_q_values(self, state_t1, action_t1, reward, state_t2, action_t2):
         # We take 90% of the known q_value and learning_rate% of the new_q_value
