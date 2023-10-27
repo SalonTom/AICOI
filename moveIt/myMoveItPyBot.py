@@ -3,6 +3,7 @@
 HackaGame player interface 
 """
 import json
+import math
 import sys, os
 
 from matplotlib import pyplot as plt
@@ -23,14 +24,15 @@ def main():
     results= player.takeASeat()
     print( f"Average: {sum(results)/len(results)}" )
 
-    data_file = open('q_values_moveIt.json', 'w+')
-    json.dump(player.q_values, data_file, sort_keys=True, indent=4)
-    data_file.close()
+    if player.use_q_values is False:
+        data_file = open('q_values_moveIt.json', 'w+')
+        json.dump(player.q_values, data_file, sort_keys=True, indent=4)
+        data_file.close()
 
     # Graph showing the evolution of the average score per each chunk_size games depending on the total number of games
     scores= []
     size = len(results)
-    chunk_size = 10
+    chunk_size = 100
     for i in range(0, size, chunk_size) :
         s= min(i+chunk_size, size)
         scores.append( sum([ x for x in results[i:s] ]) / (s-i) )
@@ -43,15 +45,17 @@ class AutonomousPlayer( pl.AbsPlayer ):
         super().__init__()
         self._board= ge.Hexaboard()
         self._mobiles= []
-        self._id= 0
+        self._id = 0
 
         self.alpha = 0.1
-        self.exploRatio = 0.4
+        self.exploRatio = 0.1
 
         self.former_state = ''
         self.last_dir = ''
 
         self.first_play = True
+
+        self.previous_score = 0
     
     # Player interface :
     def wakeUp(self, playerId, numberOfPlayers, gamePod):
@@ -68,12 +72,14 @@ class AutonomousPlayer( pl.AbsPlayer ):
         self._countCycle= 0
         self._score= 0
 
+        self.use_q_values = False
 
-        self.q_values = {
-            "sleep" : {
-                "sleep" : 0
-            }
-        }
+        if self.use_q_values:
+            data = open('q_values_moveIt.json', 'r')
+            self.q_values = json.load(data)
+            data.close()
+        else :
+            self.q_values = { "sleep" : { "sleep" : 0.0 } }
 
         # Reports:
         log( f'---\nwake-up player-{playerId} ({numberOfPlayers} players)')
@@ -117,10 +123,12 @@ class AutonomousPlayer( pl.AbsPlayer ):
         # print(self._board.shell())
 
         action= "move"
-        dirs = ['1', '2', '3', '4', '5', '6']
+        dirs = ['0', '1', '2', '3', '4', '5', '6']
 
         robotx = 0
         roboty = 0
+
+        path = []
 
         humain_index = 0
 
@@ -133,68 +141,60 @@ class AutonomousPlayer( pl.AbsPlayer ):
                 path= self._board.path( r.x(), r.y(), r.goalx(), r.goaly() )
                 dir= path[0]
                 
-                self.objectif["dist"], self.objectif["dir"] = self.dist_and_dir(robotx, roboty, r.goalx(), r.goaly())
-
-                # print('Initial move : ' + str(dir))
-
-                # new_x, new_y = self._board.at_dir(r.x(), r.y(), dir)
-
-                # if self._board.at(new_x, new_y).mobile():
-                #     print("Humain sur la next case, redirect ...")
-                #     possible_dirs = self._board.movesFrom(r.x(), r.y())
-
-                #     for pdir in possible_dirs:
-                #         new_x, new_y = self._board.at_dir(r.x(), r.y(), pdir)
-                #         if self._board.at(new_x, new_y).isAvailable() is True:
-                #             dir = pdir
-                #             break
-        
-                # action = "move " + str(dir) if dir != 'pass' else dir
+                self.objectif["dist"], self.objectif["dir"] = self.dist_and_dir(robotx, roboty, r.goalx(), r.goaly()) if len(path) < 3 else (0 , 0)
 
             if r.isHuman():
-                self.humains[humain_index]["dist"], self.humains[humain_index]["dir_robot"]  = self.dist_and_dir(robotx, roboty, r.x(), r.y())
+                human_dist, human_dir = self.dist_and_dir(robotx, roboty, r.x(), r.y())
+                
+                if human_dist > 2 :
+                    human_dist = 0
+                    human_dir = 0
+
+                self.humains[humain_index]["dist"], self.humains[humain_index]["dir_robot"] = human_dist, human_dir
                 self.humains[humain_index]["dir_move"] = r.direction()
 
                 humain_index += 1
 
-        self.state = ''.join(str(i) for i in [self.objectif["dir"], self.objectif["dist"], self.get_obstacles_string(robotx, roboty), self.humains[0]["dist"], self.humains[0]["dir_robot"], self.humains[0]["dir_move"], self.humains[1]["dist"], self.humains[1]["dir_robot"], self.humains[1]["dir_move"]])
-        # print(self.state)
+        self.state = '-'.join(str(i) for i in [self.objectif["dir"], self.objectif["dist"], self.get_obstacles_string(robotx, roboty), self.humains[0]["dist"], self.humains[0]["dir_robot"], self.humains[0]["dir_move"], self.humains[1]["dist"], self.humains[1]["dir_robot"], self.humains[1]["dir_move"]])
 
         if self.state not in self.q_values.keys():
-            self.q_values[self.state] = {"1":0.0, "2":0.0, "3":0.0, "4":0.0, "5":0.0, "6":0.0, "pass": 0.0}
+            self.q_values[self.state] = {"0": 0.0, "1":0.0, "2":0.0, "3":0.0, "4":0.0, "5":0.0, "6":0.0}
 
         if random.uniform(0,1) < self.exploRatio:
-            dir = random.choice(dirs)
+            dir = random.choice(self.free_moves(robotx, roboty)) if len(self.free_moves(robotx, roboty)) > 0 else random.choice(dirs)
         else:
+            dir = random.choice(self.free_moves(robotx, roboty)) if len(self.free_moves(robotx, roboty)) > 0 else random.choice(dirs)
             dir_q_value = self.q_values[self.state]
             max_q_value = -sys.maxsize - 1
-            dir = random.choice(dirs)
 
             for key in dir_q_value.keys():
                 if dir_q_value[key] > max_q_value:
                     dir = key
                     max_q_value = dir_q_value[key]
 
-        # Evaluation intermédiaire des q_values
-        new_x, new_y = self._board.at_dir(robotx, roboty, int(dir))
-        reward = 10 if self.objectif["dist"] - len(self._board.path(new_x, new_y, self._mobiles[0].x(), self._mobiles[0].y())) >= 0 else -10
+            reward = 0
 
-        if self.first_play is False:
-            # print("q_values updated!")
-            self.update_q_values(self.former_state, self.last_dir, reward, self.state, dir)
+            if self.first_play is False:
+                reward = 1 if self._score >= self.previous_score else -10
+                # print("q_values updated!")
+                self.update_q_values(self.former_state, str(self.last_dir), reward, self.state, str(dir))
 
-        action = "move " + str(dir) if dir != 'pass' else dir
+        action = ("move " + str(dir)) if dir != 'pass' else dir
 
         self.former_state = self.state
         self.last_dir = dir
         self.first_play = False
+        self.previous_score = self._score
 
-        # print(action)
         return action
     
     def sleep(self, result):
-        self.update_q_values(self.former_state, self.last_dir, result, 'sleep', 'sleep')
+        try:
+            self.update_q_values(self.former_state, str(self.last_dir), result, 'sleep', 'sleep')
+        except:
+            print(f'ERROR UPDATING Q VALUES FOR FORMER STATE : {self.former_state}')
         self.first_play = True
+
         # log( f'---\ngame end on result: {result}' )
 
     def update_q_values(self, state_t1, action_t1, reward, state_t2, action_t2):
@@ -218,6 +218,21 @@ class AutonomousPlayer( pl.AbsPlayer ):
                 self.obstacles[dir - 1] = False
 
         return ''.join([str(i) for i in obstacles])
+
+    def free_moves(self, x, y):
+        possible_moves = self._board.movesFrom(x,y)
+        # print(possible_moves)
+        free_moves = []
+        for move in possible_moves:
+            new_x, new_y = self._board.at_dir(x, y, move)
+            cell_at_dir = self._board.at(new_x, new_y)
+            if bool(cell_at_dir._mobile) is False and self._board.isCoordinate(new_x, new_y):
+                free_moves.append(move)
+        
+        # print(free_moves)
+        
+        return free_moves
+
 
 # script
 if __name__ == '__main__' :
